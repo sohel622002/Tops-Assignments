@@ -4,19 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table using only HTML</title>
+    <style>
+      body {
+        text-align: center;
+        display: grid;
+        place-items: center;
+      }
+      .contact-text {
+        height: 250px;
+        color: white;
+        font-size: 50px;
+        padding-top: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 85vw;
+      }
+    </style>
   </head>
-  <body style="text-align: center; display: grid; place-items: center;">
-    <table border="1" style="border-collapse: collapse; width: 85vw">
+  <body>
+    <table border="1">
       <tr>
         <td rowspan="2"><a href="#">Home</a></td>
         <td rowspan="2"><a href="#">About</a></td>
         <td rowspan="2"><a href="#">Contact</a></td>
         <td rowspan="2"><a href="#">Help</a></td>
         <td rowspan="2"><a href="#">Store</a></td>
-        <td style="background-color: red"><a href="#">Downlode</a></td>
+        <td bgcolor="red"><a href="#">Downlode</a></td>
       </tr>
       <tr>
-        <td style="background-color: red">app</td>
+        <td bgcolor="red">app</td>
       </tr>
       <tr>
         <td colspan="6">
@@ -28,35 +45,14 @@
         </td>
       </tr>
       <tr>
-        <td colspan="6" style="background-color: pink">contact-us-page</td>
+        <td colspan="6" bgcolor="pink">contact-us-page</td>
       </tr>
       <tr>
-        <td
-          colspan="6"
-          style="
-            background: linear-gradient(red, blue);
-            background-image: linear-gradient(
-                45deg,
-                rgba(255, 0, 0, 0.4),
-                rgba(0, 0, 255, 0.4)
-              ),
-              url(images/contact.jpg);
-            background-size: cover;
-          "
-        >
-          <div
-            style="
-              height: 250px;
-              color: white;
-              font-size: 50px;
-              padding-top: 20px;
-            "
-          >
-            Contact Us
-          </div>
+        <td colspan="6" style="background-image: url(images/contact\ 02.jpg)">
+          <div class="contact-text">Contact Us</div>
         </td>
       </tr>
-      <tr style="background-color: aqua">
+      <tr bgcolor="aqua">
         <td colspan="3">
           <label>First Name : </label>
           <input type="text" placeholder="Enter Your Name" />
@@ -66,7 +62,7 @@
           <input type="text" placeholder="Enter Your Name" />
         </td>
       </tr>
-      <tr style="background-color: aqua">
+      <tr bgcolor="aqua">
         <td colspan="3">
           <label>Email - id : </label>
           <input type="email" placeholder="Enter Your Email" />
@@ -80,7 +76,7 @@
           />
         </td>
       </tr>
-      <tr style="background-color: aqua">
+      <tr bgcolor="aqua">
         <td colspan="3">
           <label>city : </label>
           <select value="Ahmedabad">
