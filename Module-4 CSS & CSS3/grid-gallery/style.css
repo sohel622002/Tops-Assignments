@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main{
+    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: 10px;
+}
+
+body{
+    padding: 20px;
+}
+
+aside{
+    flex: 1 0 250px;
+    text-align: right;
+    color: whitesmoke;
+    padding: 20px 30px;
+    background-color: rgb(44, 44, 44);
+}
+
+aside h3{
+    text-transform: uppercase;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul li{
+    list-style: none;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+ul li:hover{
+    color: rgb(255, 40, 40);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr .4fr .6fr .6fr .4fr 1fr;
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+.colspan4{
+    grid-column: span 4;
+}
+.colspan2{
+    grid-column: span 2;
+}
+.colspan3{
+    grid-column: span 3;
+}
