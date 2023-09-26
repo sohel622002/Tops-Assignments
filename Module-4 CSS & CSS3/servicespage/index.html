@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Services</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .service-section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        overflow-x: hidden;
+    }
+    .services-container{
+        flex: .6;
+        text-align: right;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 60px;
+        background-color: rgb(32, 32, 32);
+        color: white;
+    }
+    .image-container{
+        flex: .4;
+        overflow: hidden;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .services-header{
+        font-size: 2.2rem;
+        border-right: 3px solid red;
+        padding-right: 20px;
+    }
+    .service-heading{
+        font-size: 1.7rem;
+        color: red;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .service-desc{
+        max-width: 550px;
+    }
+    .web-design{
+        position: relative;
+    }
+    .service-logo{
+        position: absolute;
+        top: 50%;
+        right: -60px;
+        transform: translate(50%, -50%);
+        background-color: white;
+        color: red;
+        font-size: 1.5rem;
+        padding: 10px;
+        border-radius: 50%;
+        aspect-ratio: 1 !important;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .33);
+        }
+</style>
+<body>
+    <section class="service-section">
+        <div class="services-container">
+            <h1 class="services-header">
+                OUR SERVICES
+            </h1>
+            <div class="web-design">
+                <h1 class="service-heading">web design</h1>
+                <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit laudantium iusto culpa soluta dolor, qui quaerat quas molestiae quos!</p>
+                <div class="service-logo"><i class="fa-solid fa-laptop"></i></div>
+            </div>
+            <div class="web-design">
+                <h1 class="service-heading">Print design</h1>
+                <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit laudantium iusto culpa soluta dolor, qui quaerat quas molestiae quos!</p>
+                <div class="service-logo"><i class="fa-solid fa-layer-group"></i></div>
+            </div>
+            <div class="web-design">
+                <h1 class="service-heading">Photography</h1>
+                <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit laudantium iusto culpa soluta dolor, qui quaerat quas molestiae quos!</p>
+                <div class="service-logo"><i class="fa-solid fa-camera"></i></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="tablet.jpg" alt="tablet">
+        </div>
+    </section>
+</body>
+</html>
