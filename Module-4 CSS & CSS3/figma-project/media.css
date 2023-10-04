@@ -1,0 +1,37 @@
+@media (max-width : 545px){
+    .customer-review{
+        width: 100%;
+    }
+}
+
+@media (max-width : 670px){
+    .timelinegraph{
+        width: 100%;
+    }
+    .work-services{
+        text-align: center;
+        padding: 20px;
+    }
+    .work-projects{
+        align-items: unset;
+    }
+}
+
+@media (max-width : 870px){
+    .navigation > ul,
+    .navigation > .nav-buttons{
+        display: none;
+    }
+    .moblibe-lable,
+    .mobile-navigation{
+        display: block;
+    }
+
+    input[type=checkbox]:checked ~ .mobile-navigation{
+        scale: 1 1;
+    }
+
+    .saving-container{
+        border-radius: 0;
+    }
+}
