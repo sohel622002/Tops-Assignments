@@ -1,6 +1,56 @@
+@media (max-width:436px){
+    .work{
+        max-width: calc(100% - 20px);
+    }    
+    .drop-down{
+        display: block;
+    }
+    .footer-links-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-links{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-links > ul{
+        display: none;
+    }
+    .install-app-ul{
+        display: block !important;
+    }
+    .install-app-links{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 @media (max-width : 545px){
     .customer-review{
         width: 100%;
+    }
+    .inputs > input{
+        border: 1px solid #E1E5EA;
+        text-align: center;
+    }
+    .inputs{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .partners{
+        padding: 0;
+        margin-top: 20px;
+    }
+    .work-container,
+    .work-hour-projects,
+    .customer-container{
+        margin-top: 30px;
+    }
+    .social-links{
+        display: none;
     }
 }
 
@@ -15,9 +65,18 @@
     .work-projects{
         align-items: unset;
     }
+    .timeline:first-child{
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 0;
+        border: none;
+        border-bottom: 5px solid var(--clr-seccondary);
+    }
 }
 
 @media (max-width : 870px){
+    .save-green{
+        display: none;
+    }
     .navigation > ul,
     .navigation > .nav-buttons{
         display: none;

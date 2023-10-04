@@ -22,7 +22,8 @@
 
 #check,
 .moblibe-lable,
-.mobile-navigation{
+.mobile-navigation,
+.drop-down{
     display: none;
 }
 
@@ -165,7 +166,7 @@ body::before{
 }
 
 .blue-btn{
-    padding: 10px 20px;
+    padding: 16px 20px;
     border: none;
     background-color: var(--clr-seccondary);
     color: white;
@@ -206,7 +207,7 @@ body::before{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -339,12 +340,15 @@ body::before{
     display: flex;
     gap: 30px;
     text-align: center;
-    padding: 60px 80px;
+    padding: 60px 45px;
     border-radius: 16px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
+.saving-container > h1{
+    font-size: clamp(24px, 3vw, 32px);
+}
 .saving-container > *{
     flex: 1;
 }
@@ -394,6 +398,10 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+}
+
+.copyright-container > p{
+    font-size: 14px;
 }
 
 .footer-line{
