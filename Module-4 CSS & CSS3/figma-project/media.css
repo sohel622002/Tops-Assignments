@@ -25,6 +25,12 @@
         align-items: flex-start;
         flex-direction: column;
     }
+    .customer-container > p{
+        text-align: justify;
+    }
+    .customer-container > p > br{
+        display: none;
+    }
 }
 
 @media (max-width : 545px){

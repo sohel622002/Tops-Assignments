@@ -20,7 +20,7 @@
         overflow-x: hidden;
     }
     .services-container{
-        flex: .6;
+        flex: .55;
         text-align: right;
         display: flex;
         align-items: flex-end;
@@ -32,7 +32,7 @@
         color: white;
     }
     .image-container{
-        flex: .4;
+        flex: .45;
         overflow: hidden;
     }
     img{
@@ -58,18 +58,17 @@
         position: relative;
     }
     .service-logo{
+        width: 60px;
+        height: 60px;
+        display: inline-block;
         position: absolute;
         top: 50%;
         right: -60px;
         transform: translate(50%, -50%);
-        background-color: white;
         color: red;
-        font-size: 1.5rem;
-        padding: 10px;
         border-radius: 50%;
-        aspect-ratio: 1 !important;
         box-shadow: 0 0 0 3px rgba(255, 255, 255, .33);
-        }
+    }
 </style>
 <body>
     <section class="service-section">
@@ -80,21 +79,21 @@
             <div class="web-design">
                 <h1 class="service-heading">web design</h1>
                 <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit laudantium iusto culpa soluta dolor, qui quaerat quas molestiae quos!</p>
-                <div class="service-logo"><i class="fa-solid fa-laptop"></i></div>
+                <span class="service-logo"><img src="design.png" alt="design" class="service-logo-image"></span>
             </div>
             <div class="web-design">
                 <h1 class="service-heading">Print design</h1>
                 <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit laudantium iusto culpa soluta dolor, qui quaerat quas molestiae quos!</p>
-                <div class="service-logo"><i class="fa-solid fa-layer-group"></i></div>
+                <span class="service-logo"><img src="print.png" alt="design" class="service-logo-image"></span>
             </div>
             <div class="web-design">
                 <h1 class="service-heading">Photography</h1>
                 <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit laudantium iusto culpa soluta dolor, qui quaerat quas molestiae quos!</p>
-                <div class="service-logo"><i class="fa-solid fa-camera"></i></div>
+                <span class="service-logo"><img src="photograph.png" alt="design" class="service-logo-image"></span>
             </div>
         </div>
         <div class="image-container">
-            <img src="tablet.jpg" alt="tablet">
+            <img src="bg.png" alt="tablet">
         </div>
     </section>
 </body>
