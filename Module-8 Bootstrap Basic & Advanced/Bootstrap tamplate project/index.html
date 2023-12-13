@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>FastFood.stor</title>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark" id="main-section">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">FastFood</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="javascript:void(0)"
+                  >disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="max-height: 100vh">
+          <img src="../Assets/slide01.jpg" alt="burgor" class="d-block w-100" />
+          <div
+            class="carousel-caption"
+            style="z-index: 5; text-align: right; padding-bottom: 10%"
+          >
+            <h2>Delicious Burger</h2>
+            <p>Best Burgers you can get in the area!!!</p>
+            <button class="btn bg-primary text-white">Check Now</button>
+          </div>
+        </div>
+        <div class="carousel-item" style="max-height: 100vh">
+          <img src="../Assets/slide02.jpg" alt="Pizza" class="d-block w-100" />
+          <div
+            class="carousel-caption"
+            style="z-index: 5; text-align: right; padding-bottom: 10%"
+          >
+            <h2>Delicious Sandwich</h2>
+            <p>Best Sandwich's you can get in the area!!!</p>
+            <button class="btn bg-primary text-white">Check Now</button>
+          </div>
+        </div>
+        <div class="carousel-item" style="max-height: 100vh">
+          <img
+            src="../Assets/slide03.jpeg"
+            alt="sandwich"
+            class="d-block w-100"
+          />
+          <div
+            class="carousel-caption"
+            style="z-index: 5; text-align: right; padding-bottom: 10%"
+          >
+            <h2>Delicious Pizza</h2>
+            <p>Best Pizza's you can get in the area!!!</p>
+            <button class="btn bg-primary text-white">Check Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="d-flex justify-content-center gap-2 mt-3 mb-3 p-3 flex-wrap">
+      <div class="cards">
+        <img
+          class="card-img-top rounded-circle shadow"
+          src="../Assets/burger-round-image.jpg"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <h4 class="card-title mt-2">Burgers</h4>
+          <p class="card-text">We have Best Burgers in this area.</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <img
+          class="card-img-top rounded-circle shadow"
+          src="../Assets/pizza-round-image.jpg"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <h4 class="card-title mt-2">Pizza's</h4>
+          <p class="card-text">Some example text.</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <img
+          class="card-img-top rounded-circle shadow"
+          src="../Assets/Sandwich-round-image.jpg"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <h4 class="card-title mt-2">Sandwich</h4>
+          <p class="card-text">Some example text.</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-image-flex p-5 border-top mt-5 border-bottom">
+      <div>
+        <h2>Experience of real recipies</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit eum quia officiis, ut error, similique perspiciatis
+          necessitatibus adipisci voluptatibus nobis eveniet ex. Distinctio,
+          exercitationem! Itaque?
+        </p>
+        <button class="btn text-white bg-primary">See more</button>
+      </div>
+      <div class="d-flex justify-content-end">
+        <img
+          class="rounded-2 w-100"
+          src="../Assets/slide01.jpg"
+          alt="image"
+          style="object-fit: cover"
+        />
+      </div>
+    </div>
+
+    <div class="content-image-flex p-5 mt-5 border-bottom">
+      <div class="d-flex justify-content-start">
+        <img
+          class="rounded-2 w-100"
+          src="../Assets/slide02.jpg"
+          alt="image"
+          style="object-fit: cover"
+        />
+      </div>
+      <div>
+        <h2>Experience the teast of life.</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit eum quia officiis, ut error, similique perspiciatis
+          necessitatibus adipisci voluptatibus nobis eveniet ex. Distinctio,
+          exercitationem! Itaque?
+        </p>
+        <button class="btn text-white bg-primary">See more</button>
+      </div>
+    </div>
+
+    <div class="content-image-flex p-5 mt-5 border-bottom">
+      <div>
+        <h2>Experience of real recipies</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit eum quia officiis, ut error, similique perspiciatis
+          necessitatibus adipisci voluptatibus nobis eveniet ex. Distinctio,
+          exercitationem! Itaque?
+        </p>
+        <button class="btn text-white bg-primary">See more</button>
+      </div>
+      <div class="d-flex justify-content-end">
+        <img
+          class="rounded-2 w-100"
+          src="../Assets/slide03.jpeg"
+          alt="image"
+          style="object-fit: cover"
+        />
+      </div>
+    </div>
+
+    <div class="border-top p-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <p class="mb-0">@2023 - Made by Sohel Shiakh</p>
+        <p class="mb-0 text-nowrap"><a href="#main-section">Back to Top</a></p>
+      </div>
+    </div>
+  </body>
+</html>
