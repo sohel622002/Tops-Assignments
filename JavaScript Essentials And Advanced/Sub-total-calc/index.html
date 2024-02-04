@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculate Sub Totals</title>
+  </head>
+  <body>
+    <main>
+      <table>
+        <tr>
+          <th>Product Info</th>
+          <th>Quantity</th>
+          <th>Price (per unit)</th>
+          <th>Price (Sub Total)</th>
+          <th></th>
+        </tr>
+        <tr class="product-row">
+          <td>
+            <div class="product-details">
+              <img src="assets/burger.png" alt="burger" />
+              <div>
+                <h4>Burger</h4>
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ratione, porro.</span
+                >
+              </div>
+            </div>
+          </td>
+          <td>
+            <input class="num-input" type="number" />
+          </td>
+          <td>$ <span class="per-q-price">29.99</span></td>
+          <td>$ <span class="price">00.00</span></td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+        <tr class="product-row">
+          <td>
+            <div class="product-details">
+              <img src="assets/hotdog.png" alt="hotdog" />
+              <div>
+                <h4>Hot Dog</h4>
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ratione, porro.</span
+                >
+              </div>
+            </div>
+          </td>
+          <td>
+            <input class="num-input" type="number" />
+          </td>
+          <td>$<span class="per-q-price">20.99</span></td>
+          <td>$<span class="price">00.00</span></td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+        <tr class="product-row">
+          <td>
+            <div class="product-details">
+              <img src="assets/sandwich.png" alt="sandwich" />
+              <div>
+                <h4>Sandwich</h4>
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ratione, porro.</span
+                >
+              </div>
+            </div>
+          </td>
+          <td>
+            <input class="num-input" type="number" />
+          </td>
+          <td>$<span class="per-q-price">10.99</span></td>
+          <td>$<span class="price">00.00</span></td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>$<span class="total">00.00</span></td>
+          <td></td>
+        </tr>
+      </table>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

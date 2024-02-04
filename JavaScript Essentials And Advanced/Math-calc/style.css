@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.container h2{
+    text-align: center;
+}
+.input-row > input{
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+.input-row:nth-child(1){
+    margin-bottom: 10px;
+}
+.operators-answer{
+    display: flex;
+    gap: 20px;
+}
+.operators-answer > div{
+    flex: 1;
+}
+.operators{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.operators button{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+#ans{
+    color: blue;
+}

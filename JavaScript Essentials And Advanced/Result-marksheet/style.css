@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-120%);
+    color: #a94442;
+    background-color: #f2dede;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.marksheet-wrapper{
+    position: relative;
+    border: 2px solid rgba(0, 0, 0, .15);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+ul{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li{
+    display: flex;
+}
+
+ul li > *{
+    flex: 1;
+}
+
+li input{
+    padding: 3px 7px;
+    font-size: 16px;
+}
+
+.result-button-wrapper{
+    display: flex;
+    margin-top: 10px;
+}
+
+.result-button-wrapper > *{
+    flex: 1;
+}
+
+.result-wrapper > button{
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #131313;
+    cursor: pointer;
+    margin-left: -8px;
+}
+
+.result-detail{
+    display: flex;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#total,#percentage{
+    color: blue;
+}
+
+.result-detail > *{
+    flex: 1;
+}

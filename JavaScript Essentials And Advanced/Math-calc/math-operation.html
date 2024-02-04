@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Math Operation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Maths Operations</h2>
+      <div class="inputs">
+        <div class="input-row">
+          <label for="first-num">Enter 1st Number :</label>
+          <input type="number" id="first-num" />
+        </div>
+        <div class="input-row">
+          <label for="second-num">Enter 2nd Number :</label>
+          <input type="number" id="second-num" />
+        </div>
+      </div>
+      <div class="operators-answer">
+        <div class="operators">
+          <button data-btn="plus">+</button>
+          <button data-btn="minus">-</button>
+          <button data-btn="mult">*</button>
+          <button data-btn="devide">/</button>
+          <button data-btn="pers">%</button>
+        </div>
+        <div>Answer is : <span id="ans">00</span></div>
+      </div>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll(".operators button");
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", calculateAns);
+      });
+
+      function calculateAns(e) {
+        const buttonType = e.target.getAttribute("data-btn");
+        const inputVal1 = Number(document.querySelector("#first-num").value);
+        const inputVal2 = Number(document.querySelector("#second-num").value);
+        const ans = document.querySelector("#ans");
+        switch (buttonType) {
+          case "plus":
+            ans.innerText = (inputVal1 + inputVal2).toFixed(2);
+            break;
+          case "minus":
+            ans.innerText = (inputVal1 - inputVal2).toFixed(2);
+            break;
+          case "mult":
+            ans.innerText = (inputVal1 * inputVal2).toFixed(2);
+            break;
+          case "devide":
+            ans.innerText = (inputVal1 / inputVal2).toFixed(2);
+            break;
+          case "pers":
+            ans.innerText = ((inputVal1 * 100) / inputVal2).toFixed(2);
+            break;
+          default:
+            ans.innerText = "00";
+        }
+      }
+    </script>
+  </body>
+</html>
