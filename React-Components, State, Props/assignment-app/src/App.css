@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: rgba(23, 23, 23, 0.9);
+}
+
+.Main_App {
+  padding: 30px;
+}
+
+.Main_App > ul {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.Main_App > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 7px 10px;
+}
+
+.Main_App > ul > li > a.active {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  border: 1px solid;
+}
