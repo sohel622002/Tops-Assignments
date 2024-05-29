@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.profile-image-wrapper > img {
+  width: 100%;
+  aspect-ratio: 2/1.2;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.profile-container > div {
+  flex: 1;
+}
+
+.active_pill {
+  display: inline-block;
+  color: green;
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 0px 10px;
+  padding-bottom: 2px;
+}
+
+.inactive_pill {
+  display: inline-block;
+  color: salmon;
+  border: 2px solid salmon;
+  border-radius: 20px;
+  padding: 0px 10px;
+  padding-bottom: 2px;
+}
+
+.nav-link::before {
+  width: 0px !important;
+  opacity: 0.5 !important;
+}
+
+.custom-navbar .custom-navbar-nav li a{
+  opacity: 0.5 !important;
+}
+
+.custom-navbar .custom-navbar-nav li a.active{
+  opacity: 1 !important;
+}
+
+.header-links .nav-link.active::before {
+  width: calc(100% - 16px) !important;
+  opacity: 1 !important;
+}
